@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-20T18:34:32 GST" name="Default suite" finished-at="2026-05-20T18:34:39 GST" duration-ms="6768">
+  <suite started-at="2026-05-20T18:42:42 GST" name="Default suite" finished-at="2026-05-20T18:42:51 GST" duration-ms="8957">
     <groups>
     </groups>
-    <test started-at="2026-05-20T18:34:32 GST" name="Default test" finished-at="2026-05-20T18:34:39 GST" duration-ms="6768">
-      <class name="tests.NavigationTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NavigationTests@15c43bd9]" started-at="2026-05-20T18:34:32 GST" name="setup" finished-at="2026-05-20T18:34:38 GST" duration-ms="6320" status="PASS">
+    <test started-at="2026-05-20T18:42:42 GST" name="Default test" finished-at="2026-05-20T18:42:51 GST" duration-ms="8957">
+      <class name="tests.InvalidRouteTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.InvalidRouteTests@15c43bd9]" started-at="2026-05-20T18:42:42 GST" name="setup" finished-at="2026-05-20T18:42:48 GST" duration-ms="5733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyHomePageLoadsSuccessfully()[pri:0, instance:tests.NavigationTests@15c43bd9]" started-at="2026-05-20T18:34:38 GST" name="verifyHomePageLoadsSuccessfully" finished-at="2026-05-20T18:34:38 GST" duration-ms="64" status="PASS">
+        <test-method signature="verifyInvalidRouteHandling()[pri:0, instance:tests.InvalidRouteTests@15c43bd9]" started-at="2026-05-20T18:42:48 GST" name="verifyInvalidRouteHandling" finished-at="2026-05-20T18:42:51 GST" duration-ms="2914" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageLoadsSuccessfully -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NavigationTests@15c43bd9]" started-at="2026-05-20T18:34:38 GST" name="tearDown" finished-at="2026-05-20T18:34:39 GST" duration-ms="350" status="PASS">
+        </test-method> <!-- verifyInvalidRouteHandling -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.InvalidRouteTests@15c43bd9]" started-at="2026-05-20T18:42:51 GST" name="tearDown" finished-at="2026-05-20T18:42:51 GST" duration-ms="275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.NavigationTests -->
+      </class> <!-- tests.InvalidRouteTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
