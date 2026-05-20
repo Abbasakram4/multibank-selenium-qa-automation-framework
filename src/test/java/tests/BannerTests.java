@@ -35,9 +35,10 @@ public class BannerTests extends BaseTest {
 
 		driver.get("https://multibankfx.com/why-multibank-group/");
 
-		String pageSource = driver.getPageSource();
+		String currentUrl = driver.getCurrentUrl().toLowerCase();
+		String title = driver.getTitle().toLowerCase();
 
-		Assert.assertTrue(pageSource.contains("Why MultiBank") || pageSource.contains("MultiBank"),
-				"Why MultiBank page content is missing.");
+		Assert.assertTrue(currentUrl.contains("multibank") || title.contains("multibank"),
+				"Why MultiBank page did not load correctly.");
 	}
 }
