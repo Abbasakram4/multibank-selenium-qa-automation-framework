@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-20T18:48:05 GST" name="Default suite" finished-at="2026-05-20T18:48:23 GST" duration-ms="18695">
+  <suite started-at="2026-05-20T18:58:16 GST" name="Default suite" finished-at="2026-05-20T18:58:39 GST" duration-ms="22962">
     <groups>
     </groups>
-    <test started-at="2026-05-20T18:48:05 GST" name="Default test" finished-at="2026-05-20T18:48:23 GST" duration-ms="18695">
-      <class name="tests.TradingTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TradingTests@4f209819]" started-at="2026-05-20T18:48:05 GST" name="setup" finished-at="2026-05-20T18:48:11 GST" duration-ms="6666" status="PASS">
+    <test started-at="2026-05-20T18:58:16 GST" name="Default test" finished-at="2026-05-20T18:58:39 GST" duration-ms="22962">
+      <class name="tests.BannerTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BannerTests@4f209819]" started-at="2026-05-20T18:58:16 GST" name="setup" finished-at="2026-05-20T18:58:21 GST" duration-ms="5371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySpotTradingSectionDisplaysTradingPairs()[pri:0, instance:tests.TradingTests@4f209819]" started-at="2026-05-20T18:48:11 GST" name="verifySpotTradingSectionDisplaysTradingPairs" finished-at="2026-05-20T18:48:11 GST" duration-ms="68" status="PASS">
+        <test-method signature="verifyAppDownloadSectionExists()[pri:0, instance:tests.BannerTests@4f209819]" started-at="2026-05-20T18:58:21 GST" name="verifyAppDownloadSectionExists" finished-at="2026-05-20T18:58:21 GST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySpotTradingSectionDisplaysTradingPairs -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TradingTests@4f209819]" started-at="2026-05-20T18:48:11 GST" name="tearDown" finished-at="2026-05-20T18:48:12 GST" duration-ms="699" status="PASS">
+        </test-method> <!-- verifyAppDownloadSectionExists -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BannerTests@4f209819]" started-at="2026-05-20T18:58:21 GST" name="tearDown" finished-at="2026-05-20T18:58:22 GST" duration-ms="455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TradingTests@4f209819]" started-at="2026-05-20T18:48:12 GST" name="setup" finished-at="2026-05-20T18:48:18 GST" duration-ms="5545" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BannerTests@4f209819]" started-at="2026-05-20T18:58:22 GST" name="setup" finished-at="2026-05-20T18:58:27 GST" duration-ms="4831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyTradingCategoriesAreVisible()[pri:0, instance:tests.TradingTests@4f209819]" started-at="2026-05-20T18:48:18 GST" name="verifyTradingCategoriesAreVisible" finished-at="2026-05-20T18:48:18 GST" duration-ms="34" status="PASS">
+        <test-method signature="verifyMarketingBannersAreDisplayed()[pri:0, instance:tests.BannerTests@4f209819]" started-at="2026-05-20T18:58:27 GST" name="verifyMarketingBannersAreDisplayed" finished-at="2026-05-20T18:58:27 GST" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTradingCategoriesAreVisible -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TradingTests@4f209819]" started-at="2026-05-20T18:48:18 GST" name="tearDown" finished-at="2026-05-20T18:48:18 GST" duration-ms="527" status="PASS">
+        </test-method> <!-- verifyMarketingBannersAreDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BannerTests@4f209819]" started-at="2026-05-20T18:58:27 GST" name="tearDown" finished-at="2026-05-20T18:58:27 GST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TradingTests@4f209819]" started-at="2026-05-20T18:48:18 GST" name="setup" finished-at="2026-05-20T18:48:23 GST" duration-ms="4699" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BannerTests@4f209819]" started-at="2026-05-20T18:58:27 GST" name="setup" finished-at="2026-05-20T18:58:31 GST" duration-ms="4566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyTradingDataFieldsExist()[pri:0, instance:tests.TradingTests@4f209819]" started-at="2026-05-20T18:48:23 GST" name="verifyTradingDataFieldsExist" finished-at="2026-05-20T18:48:23 GST" duration-ms="22" status="PASS">
+        <test-method signature="verifyWhyMultiBankPageLoads()[pri:0, instance:tests.BannerTests@4f209819]" started-at="2026-05-20T18:58:31 GST" name="verifyWhyMultiBankPageLoads" finished-at="2026-05-20T18:58:38 GST" duration-ms="6874" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTradingDataFieldsExist -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TradingTests@4f209819]" started-at="2026-05-20T18:48:23 GST" name="tearDown" finished-at="2026-05-20T18:48:23 GST" duration-ms="388" status="PASS">
+        </test-method> <!-- verifyWhyMultiBankPageLoads -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BannerTests@4f209819]" started-at="2026-05-20T18:58:38 GST" name="tearDown" finished-at="2026-05-20T18:58:39 GST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.TradingTests -->
+      </class> <!-- tests.BannerTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
