@@ -1,0 +1,6 @@
+base\BaseTest.class
+tests\BannerTests.class
+tests\BrokenLinkTests.class
+tests\NavigationTests.class
+tests\TradingTests.class
+tests\InvalidRouteTests.class
