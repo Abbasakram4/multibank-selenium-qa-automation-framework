@@ -1,3 +1,11 @@
+# MultiBank Selenium QA Automation Framework
+
+Production-style UI automation framework implemented using Selenium WebDriver, Java, TestNG, and Maven.
+
+The framework focuses on validating public user journeys and quality checks including navigation, trading visibility, marketing content, application download flows, broken links, invalid routes, and cross-browser execution.
+
+---
+
 ## Framework Structure
 
 src/test/java
@@ -7,8 +15,33 @@ src/test/java
 - tests
 - utils
 
+Structure overview:
+
+base
+- Driver initialization
+- Browser setup
+- Common test lifecycle
+
+pages
+- Page Object classes
+- Element handling
+- Reusable page actions
+
+tests
+- Test scenarios
+- Assertions
+- Execution suites
+
+utils
+- Browser helpers
+- Wait utilities
+- Common reusable methods
+
+---
 
 ## Test Coverage
+
+Implemented validation for:
 
 - Navigation validation
 - Trading section validation
@@ -19,12 +52,27 @@ src/test/java
 - Invalid route handling
 - Cross-browser execution support
 
+---
 
-# MultiBank Selenium QA Automation Framework
+## Requirement Interpretation and Assumptions
 
-Implemented Selenium automation using Java, TestNG, and Maven.
+During implementation, the automation scope was aligned to the observable behavior of the current application UI.
 
-Focused on validating public user flows including navigation, trading data visibility, banners, invalid routes, and broken links.
+Observations:
+
+- Navigation behavior was validated against the currently accessible application state.
+- Some referenced flows could not be reproduced directly from visible navigation during execution.
+- Only reachable and verifiable UI paths were automated.
+
+Implementation Decision:
+
+- Prioritized observable user journeys instead of forcing unsupported navigation.
+- Focused on reproducible validations and maintainable automation design.
+- Documented assumptions and kept implementation transparent.
+
+If this were a production environment, clarification would normally be raised before implementation.
+
+---
 
 ## Tech Stack
 
@@ -34,44 +82,87 @@ Focused on validating public user flows including navigation, trading data visib
 - Maven
 - WebDriverManager
 
+---
+
 ## Cross-Browser Execution
 
-The framework supports execution on Chrome, Firefox, and Edge browsers using the browser parameter.
+Framework supports execution across:
 
-Chrome and Firefox executions were completed successfully during local validation.
+- Chrome
+- Firefox
+- Edge
 
-Edge browser support is also implemented in the framework. During execution, WebDriverManager was unable to download the required EdgeDriver because of a local network/DNS resolution issue. The framework logic and browser configuration for Edge are already included and can execute successfully once the driver download issue is resolved.## Cross-Browser Execution
+Execution status:
 
-The framework supports execution on Chrome, Firefox, and Edge browsers using the browser parameter.
+| Browser | Status |
+|----------|--------|
+| Chrome | Executed Successfully |
+| Firefox | Executed Successfully |
+| Edge | Framework Implemented |
 
-Chrome and Firefox executions were completed successfully during local validation.
+Edge Notes:
 
-Edge browser support is also implemented in the framework. During execution, WebDriverManager was unable to download the required EdgeDriver because of a local network/DNS resolution issue. The framework logic and browser configuration for Edge are already included and can execute successfully once the driver download issue is resolved.## Cross-Browser Execution
+During local execution, WebDriverManager was unable to download EdgeDriver because of a local driver resolution / DNS-related environment issue.
 
-The framework supports execution on Chrome, Firefox, and Edge browsers using the browser parameter.
+Browser support remains implemented and executable once the driver dependency issue is resolved.
 
-Chrome and Firefox executions were completed successfully during local validation.
+---
 
-Edge browser support is also implemented in the framework. During execution, WebDriverManager was unable to download the required EdgeDriver because of a local network/DNS resolution issue. The framework logic and browser configuration for Edge are already included and can execute successfully once the driver download issue is resolved.
+## Running Tests
 
-## Running Tests in GIT BASH
-## For Running All Tests
+Run all tests:
 
-1. Run all tests:
-
-	mvn clean test
+```bash
+mvn clean test
 ```
 
-2. Run on Chrome:
+Run on Chrome:
 
-	mvn clean test -Dbrowser=chrome
+```bash
+mvn clean test -Dbrowser=chrome
 ```
 
-3. Run on Firefox:
+Run on Firefox:
 
-	mvn clean test -Dbrowser=firefox
+```bash
+mvn clean test -Dbrowser=firefox
 ```
 
-4. Run on Edge:
+Run on Edge:
 
-	mvn clean test -Dbrowser=edge (This will be failing because the reason I have already mentioned above: Edge browser support
+```bash
+mvn clean test -Dbrowser=edge
+```
+
+---
+
+## Design Principles
+
+Framework design focused on:
+
+- Maintainability
+- Reusability
+- Scalability
+- Separation of concerns
+- Clean Page Object implementation
+- Easy browser extensibility
+
+---
+
+## Known Limitations
+
+- Validation scope is limited to publicly accessible UI.
+- Edge execution was not completed locally due to driver download dependency.
+- Dynamic UI behavior may vary depending on environment updates.
+
+---
+
+## Submission Notes
+
+This assessment was completed with emphasis on:
+
+- Automation architecture
+- Reasoning and implementation decisions
+- Stability of execution
+- Readability of framework
+- Documentation and maintainability
